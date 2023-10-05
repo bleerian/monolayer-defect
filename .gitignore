@@ -1,0 +1,5 @@
+# Ignore hidden ipython notebook checkpoints
+
+.ipynb_checkpoints
+
+./scripts/.ipynb_checkpoints
