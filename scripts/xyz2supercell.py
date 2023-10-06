@@ -93,18 +93,3 @@ class StructureBuilder:
             print(self.built_structure)
 
 
-if __name__ == "__main__":
-    filename = input("File name containing coordinates (ie: AB2.xyz):")
-    builder = StructureBuilder(filename)
-    builder.extract_elements()
-    builder.set_lattice_constants()
-    builder.construct_coordinates()
-    builder.build_structure()
-    scell_a = int(input("Supercell in x direction: "))  # Assuming the supercell dimensions are integers
-    scell_b = int(input("Supercell in y direction: "))
-    scell_c = int(input("Supercell in z direction: "))
-    builder.supercell(scell_a, scell_b, scell_c)
-    builder.convert_to_poscar()
-    builder.display()
-
-
