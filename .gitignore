@@ -2,4 +2,7 @@
 
 .ipynb_checkpoints
 
-./scripts/.ipynb_checkpoints
+# Ignore pycache files
+
+*.pyc
+*.pyo
